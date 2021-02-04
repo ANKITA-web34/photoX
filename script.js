@@ -1,13 +1,17 @@
 $(document).ready(function() {
     $('.nav-button').click(function() {
-        $('.nav-button').toggleClasse('change');
+        $('.nav-button').toggleClass('change');
     });
 
 
     $(window).scroll(function() {
         let position = $(this).scrollTop();
-        if(postion >= 200) {
-            $('nav-menu').removeClass('custom-navbar');
+        if(position >= 200) {
+            $('.nav-menu').addClass('custom-navbar');
+        } else {
+            $('.nav-menu').removeClass('custom-navbar');
         }
     });
+
+
 });
