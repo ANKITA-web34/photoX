@@ -323,3 +323,15 @@ header{
         margin:auto;
     }
 }
+
+/*footer*/
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    color: #70aed2;
+    text-decoration: none;
+}
