@@ -183,10 +183,12 @@ header{
     background-color: #151f20 ;
 }
 /*pricing*/
+
 .card-1, .card-2, .card-3 {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.5)) ,url(images/pricing-card-bg.jpeg) center no-repeat / cover;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(images/pricing-card-bg.jpeg) center /cover;
     box-shadow: 7px 18px 50px #555;
-}
+    max-width: 400px;
+  }
 
 .card-list-item {
     border-bottom:  1px groove #eee;
@@ -205,4 +207,57 @@ header{
 .price-card-button:hover {
     background-color: #f9793d;
     transform: translateY(-2px);
+}
+
+
+.movefromleft {
+    animation-name: movefromleft;
+    animation-duration: 2s;
+}
+
+.movefromright {
+    animation-name: movefromright;
+    animation-duration: 2s;
+}
+
+.movefrombottom {
+    animation-name: movefrombottom;
+    animation-duration: 2s;
+}
+
+
+@keyframes movefromleft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes movefromright {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes movefrombottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
